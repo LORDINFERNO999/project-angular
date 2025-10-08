@@ -3,18 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project-angular": {
+    "nombre-de-tu-proyecto": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss",
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
+          "style": "scss"
         }
       },
       "root": "",
@@ -70,10 +63,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "project-angular:build:production"
+              "buildTarget": "nombre-de-tu-proyecto:build:production"
             },
             "development": {
-              "buildTarget": "project-angular:build:development"
+              "buildTarget": "nombre-de-tu-proyecto:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,6 +94,6 @@
     }
   },
   "cli": {
-    "analytics": "c6eae54f-76d6-41e7-8860-f5d47e5b3ed8"
+    "analytics": false
   }
 }
